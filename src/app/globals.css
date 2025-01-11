@@ -25,3 +25,17 @@ body {
 h1 {
   font-family: "Bitter", serif;
 }
+
+h2 {
+  font-family: "Bitter", serif;
+}
+
+.circular-gradient {
+  background: radial-gradient(
+    circle,
+    #f5dca6 0%,
+    #a6b7d6 40%,
+    #9f788b 70%,
+    #c38b7d 100%
+  );
+}
