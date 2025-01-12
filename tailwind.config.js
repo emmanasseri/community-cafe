@@ -11,6 +11,12 @@ export default {
       colors: {
         nightblue: "var(--night-blue)",
       },
+      keyframes: {
+        float: {
+          "0%": { transform: "translateX(100%)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
+      },
       animation: {
         float: "float 15s linear infinite",
       },

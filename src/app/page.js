@@ -4,7 +4,7 @@ import Button from "./components/Button";
 export default function Home() {
   return (
     <main className="flex flex-col min-h-screen">
-      <div className="circular-gradient pt-16 items-center">
+      <div className="circular-gradient pt-16 flex flex-col items-center">
         <h1 className="text-9xl md:text-[8rem] font-bold text-center">
           community café
         </h1>
@@ -12,6 +12,7 @@ export default function Home() {
           IRL 3rd spaces for the decentrally-minded.
         </p>
 
+        {/* Centered GIF */}
         <Image
           src="/welcome-latte.gif"
           alt="Community Cafe"
@@ -50,28 +51,30 @@ export default function Home() {
           </div>
         </section>
       </div>
-      <section className="flex flex-col items-center justify-center px-8 pt-16 bg-gradient-to-b from-blue-950 to-sky-500 text-center text-white">
-        {/* Text */}
-        <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
+      <section className="relative flex flex-col items-center justify-center px-8 pt-16 bg-gradient-to-b from-blue-950 to-sky-500 text-center text-white">
+        {/* Floating Clouds */}
+        {/* <div className="absolute inset-0 pointer-events-none">
           <img
             src="/cloud1.png"
             alt="Cloud 1"
-            className="absolute w-24 h-auto top-10 animate-float"
+            className="absolute w-24 h-auto top-10 left-10 animate-float"
             style={{ animationDelay: "0s" }}
           />
           <img
             src="/cloud2.png"
             alt="Cloud 2"
-            className="absolute w-32 h-auto top-20 animate-float"
-            style={{ animationDelay: "5s" }}
+            className="absolute w-32 h-auto top-20 left-1/3 animate-float"
+            // style={{ animationDelay: "5s" }}
           />
           <img
             src="/cloud3.png"
             alt="Cloud 3"
-            className="absolute w-28 h-auto top-32 animate-float"
-            style={{ animationDelay: "10s" }}
+            className="absolute w-28 h-auto top-32 left-2/3 animate-float"
+            // style={{ animationDelay: "10s" }}
           />
-        </div>
+        </div> */}
+
+        {/* Text */}
         <h2 className="text-3xl md:text-5xl font-bold mb-4">Get in Touch</h2>
         <p className="text-lg md:text-xl mb-8">
           If you're interested in learning more or joining us as we build this
