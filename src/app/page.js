@@ -5,28 +5,28 @@ export default function Home() {
   return (
     <main className="flex flex-col min-h-screen">
       <div className="circular-gradient pt-16 flex flex-col items-center">
-        <h1 className="text-9xl md:text-[8rem] font-bold text-center">
-          community café
-        </h1>
-        <p className="text-xl md:text-2xl text-gray-100 mt-6 text-center">
-          IRL 3rd spaces for the decentrally-minded.
+        <div className="prose prose-lg md:prose-xl lg:prose-2xl text-center w-full  text-blue-950">
+          <h1 className="font-bold">Community Café</h1>
+        </div>
+        <p className="text-2xl md:text-3xl text-sky-950 mt-6 text-center px-5">
+          IRL 3rd spaces for the <br></br>decentrally-minded.
         </p>
 
-        {/* Centered GIF */}
         <Image
-          src="/welcome-latte.gif"
+          src={`/welcome-latte.gif?${new Date().getTime()}`}
           alt="Community Cafe"
-          width={300}
+          width={500}
           height={200}
           className="m-8"
           priority
         />
-        <section className="flex flex-col md:flex-row items-center justify-between px-12 pt-16 bg-blue-950">
+
+        <section className="flex flex-col md:flex-row items-center justify-between px-12 pt-16">
           <div className="md:w-1/2 text-gray-200 space-y-6">
-            <h2 className="text-4xl md:text-6xl font-bold">
-              About Community Café
+            <h2 className="text-4xl md:text-6xl font-bold text-blue-950">
+              About
             </h2>
-            <p className="text-lg md:text-xl">
+            <p className="text-lg md:text-xl  text-sky-950">
               Community Café is a design for decentralization-focused,
               community-owned third spaces focused on making people&#39;s lives
               better through access to healthy food, community, and creativity.
@@ -51,7 +51,7 @@ export default function Home() {
           </div>
         </section>
       </div>
-      <section className="relative flex flex-col items-center justify-center px-8 pt-16 bg-gradient-to-b from-blue-950 to-sky-500 text-center text-white">
+      <section className="relative flex flex-col items-center justify-center px-8 pt-16 bg-gradient-to-b from-blue-900 to-sky-300 text-center text-white">
         {/* Floating Clouds */}
         {/* <div className="absolute inset-0 pointer-events-none">
           <img
